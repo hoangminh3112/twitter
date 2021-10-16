@@ -44,6 +44,8 @@ public class LoginActivity extends AppCompatActivity {
         //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance();
 
+        checkUser();
+
         //go to sign up
         binding.dontHaveAccountTv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +62,16 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void checkUser() {
+        //check user info
+        //get current user
+        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+        if (firebaseUser!=null) {
+            startActivity(new Intent(this, ProfileActivity.class));
+            finish();
+        }
     }
 
     private void validateData() {

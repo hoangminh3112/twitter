@@ -23,15 +23,24 @@
         android:textAlignment="center"
         android:layout_below="@id/titleLabel"
         style="@style/TextAppearance.MaterialComponents.Caption"/>
-    
+
     <!-- Email -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailTil"
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/passwordTil"
-        android:layout_marginBottom="10dp">
+        android:layout_above="@id/emailTil"
+        android:paddingTop="50dp"
+        android:src="@drawable/twitter" />
 
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTil"
+        android:layout_above="@id/passwordTil"
+        >
         <EditText
             android:id="@+id/emailEt"
             android:layout_width="match_parent"
@@ -39,7 +48,6 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- password -->
