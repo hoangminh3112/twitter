@@ -45,6 +45,7 @@
         android:id="@+id/passwordTil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app.passwordToggleEnable = "true"
         android:layout_centerInParent="true">
 
         <EditText
