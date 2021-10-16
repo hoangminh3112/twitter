@@ -1,6 +1,7 @@
 package vn.edu.usth.twitter;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -28,12 +29,20 @@ public class SignUpActivity extends AppCompatActivity {
     private String email ="", password = "";
     private FirebaseAuth firebaseAuth;
     private ProgressBar progressBar;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        //config action bar
+        actionBar = getSupportActionBar();
+        actionBar.setTitle("Sign Up");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+
 
         //init firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance();
@@ -46,8 +55,16 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View view) {
                 validateData();
             }
+        });
+    }
 
-            private void validateData() {
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed(); //got previous activity when back button of action clicked
+        return super.onSupportNavigateUp();
+    }
+
+    private void validateData() {
                 //getData
                 email = binding.emailEt.getText().toString().trim();
                 password = binding.passwordEt.getText().toString().trim();
@@ -66,7 +83,7 @@ public class SignUpActivity extends AppCompatActivity {
                     //valid
                     firebaseSignUp();
                 }
-            }
+    }
 
             private void firebaseSignUp() {
                 firebaseAuth.createUserWithEmailAndPassword(email, password)
@@ -88,6 +105,4 @@ public class SignUpActivity extends AppCompatActivity {
                             }
                         });
             }
-        });
     }
-}
