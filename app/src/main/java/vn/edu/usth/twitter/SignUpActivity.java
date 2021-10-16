@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -72,11 +73,12 @@ public class SignUpActivity extends AppCompatActivity {
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override
                             public void onSuccess(AuthResult authResult) {
-
                                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                                 String email = firebaseUser.getEmail();
                                 Toast.makeText(SignUpActivity.this, "Account Created\n" + email, Toast.LENGTH_SHORT).show();
 
+                                startActivity(new Intent(SignUpActivity.this , ProfileActivity.class));
+                                finish();
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {
