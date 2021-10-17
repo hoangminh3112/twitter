@@ -3,7 +3,7 @@ package vn.edu.usth.twitter;
 import java.io.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
-import com.example.Fragment.*;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.os.Bundle;
 import android.view.MenuItem;
