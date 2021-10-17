@@ -25,13 +25,13 @@
         style="@style/TextAppearance.MaterialComponents.Caption"/>
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/emailTil"
-            android:paddingTop="50dp"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/emailTil"
+        android:paddingTop="50dp"
 
-            android:src="@drawable/twitter" />
+        android:src="@drawable/twitter" />
 
 
     <com.google.android.material.textfield.TextInputLayout

@@ -6,7 +6,20 @@
     tools:context=".ProfileActivity"
     android:padding="20dp"
     android:orientation="vertical"
-    android:gravity="center">
+    >
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabs_layout"
+        android:id="@+id/view_pager"
+        />
 
     <!-- Show Info -->
     <TextView
@@ -15,6 +28,7 @@
         android:layout_height="wrap_content"
         android:text="Name: "
         android:textAlignment="center"
+        android:gravity="center"
         style="@style/TextAppearance.MaterialComponents.Caption"
         />
 
@@ -22,8 +36,11 @@
         android:id="@+id/emailTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+
+        android:textAlignment="center"
         android:layout_below="@id/caption"
+        android:gravity="center"
+
         style="@style/TextAppearance.MaterialComponents.Headline4"/>
 
      <Button
@@ -31,6 +48,7 @@
         android:layout_height="wrap_content"
         android:text="Sign Out"
         android:id="@+id/logoutBtn"
-        android:layout_marginTop="20dp"/>
+         android:gravity="center"
+         android:layout_marginTop="20dp"/>
 
 </LinearLayout>
