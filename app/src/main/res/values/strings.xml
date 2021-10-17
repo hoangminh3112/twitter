@@ -2,5 +2,7 @@
     <string name="app_name">twitter</string>
     <string name="don_t_have_an_account_sign_up">Don’t have an account? <b>Sign Up</b></string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content"> <b>Lorem ipsum dolor sit amet consectetur, </b> adipisicing elit. Sint provident sit ullam sapiente aperiam repellat doloribus consectetur. Tempore repellat temporibus voluptatibus hic perspiciatis exercitationem similique recusandae nostrum facilis, esse optio.</string>
+    <string name="username"><b>Username</b></string>
+    <string name="description"><b>Description: </b></string>
 </resources>

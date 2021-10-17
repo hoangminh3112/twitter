@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
         //get current user
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         if (firebaseUser!=null) {
-            startActivity(new Intent(this, ProfileActivity.class));
+            startActivity(new Intent(this, HomeActivity.class));
             finish();
         }
     }
@@ -104,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                         String email = firebaseUser.getEmail();
                         Toast.makeText(LoginActivity.this, "Logged In Success \n" + email, Toast.LENGTH_SHORT).show();
 
-                        startActivity(new Intent(LoginActivity.this , ProfileActivity.class));
+                        startActivity(new Intent(LoginActivity.this , HomeActivity.class));
                         finish();
                     }
                 })

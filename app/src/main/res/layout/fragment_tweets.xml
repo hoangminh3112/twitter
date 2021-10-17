@@ -1,14 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
     tools:context=".TweetsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Tweets"
-        android:gravity="center"/>
-</FrameLayout>
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tweets1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tweets2"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/new_moon" />
+
+            <TextView
+                android:id="@+id/tweets2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tweets1"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="@string/content"
+                android:textAlignment="textStart" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tweets2"
+                android:text="@string/username" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tweets2"
+
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/new_moon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:layout_below="@id/tweets3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tweets3"
+
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/new_moon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:layout_below="@id/tweets4"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tweets4"
+
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/new_moon" />
+
+            <TextView
+                android:id="@+id/tweets3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tweets2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="@string/content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tweets2"
+                android:background="#c0c0c0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tweets3"
+        android:background="#c0c0c0"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tweets4"
+        android:background="#c0c0c0"/>
+
+            <TextView
+                android:id="@+id/tweets4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tweets3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="@string/content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tweets4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="@string/content" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav"
+        app:itemBackground="@color/blue_500"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_nav"/>
+</RelativeLayout>

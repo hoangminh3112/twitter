@@ -3,16 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfileActivity"
     android:padding="20dp"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
+    <!-- Show Info -->
+
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/emailTv"
+            android:text="Sign Out" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+    <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:text="@string/description"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content"
+        />
+
 
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutBtn"
+
+        />
 
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
@@ -20,35 +58,5 @@
         android:layout_below="@id/tabs_layout"
         android:id="@+id/view_pager"
         />
-
-    <!-- Show Info -->
-    <TextView
-        android:id="@+id/caption"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name: "
-        android:textAlignment="center"
-        android:gravity="center"
-        style="@style/TextAppearance.MaterialComponents.Caption"
-        />
-
-    <TextView
-        android:id="@+id/emailTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:textAlignment="center"
-        android:layout_below="@id/caption"
-        android:gravity="center"
-
-        style="@style/TextAppearance.MaterialComponents.Headline4"/>
-
-     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Out"
-        android:id="@+id/logoutBtn"
-         android:gravity="center"
-         android:layout_marginTop="20dp"/>
 
 </LinearLayout>

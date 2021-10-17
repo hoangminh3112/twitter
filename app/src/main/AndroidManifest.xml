@@ -12,13 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Twitter">
         <activity
-            android:name=".ReTweetsActivity"
-            android:exported="true" />
-        <activity
-        android:name=".LikedActivity"
-        android:exported="true" />
-        <activity
-            android:name=".TweetsActivity"
+            android:name=".HomeActivity"
             android:exported="true" />
         <activity
             android:name=".ProfileActivity"
