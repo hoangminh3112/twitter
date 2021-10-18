@@ -49,12 +49,12 @@ public class HomeActivity extends AppCompatActivity {
              }
          });
 
-        binding.userInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
-            }
-        });
+//        binding.userInfo.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+//            }
+//        });
 
         actionBar = getSupportActionBar();
         actionBar.setTitle("Home");

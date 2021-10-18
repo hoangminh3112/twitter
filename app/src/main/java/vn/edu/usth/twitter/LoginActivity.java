@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
             binding.passwordEt.setError("Enter Password");
         }
         else if (password.length()<6){
-            binding.emailEt.setError("Password must atleast 6 characters long");
+            binding.emailEt.setError("Password must at least 6 characters long");
         }
         else {
             //valid

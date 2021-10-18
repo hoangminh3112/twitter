@@ -58,5 +58,4 @@
         android:layout_below="@id/tabs_layout"
         android:id="@+id/view_pager"
         />
-
 </LinearLayout>
