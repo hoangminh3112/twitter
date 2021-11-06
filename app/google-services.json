@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "162590494498",
+    "project_id": "twitter-bb689",
+    "storage_bucket": "twitter-bb689.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162590494498:android:714ffbe56246caf0be1f7b",
+        "android_client_info": {
+          "package_name": "vn.edu.usth.twitter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162590494498-hjva885f775r75kp0824dv4phl90qbh0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAniinjnne55AGJGXA7WbVHjh1nG0q-w8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162590494498-hjva885f775r75kp0824dv4phl90qbh0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
