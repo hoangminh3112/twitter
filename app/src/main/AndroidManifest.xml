@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Twitter">
         <activity
+            android:name=".Message"
+            android:exported="true" />
+        <activity
             android:name=".Noti"
             android:exported="true" />
         <activity
