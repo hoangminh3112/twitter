@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/tweet"
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#2196F3"
+        android:clickable="true"
+        android:text="+"
+        android:textSize="30sp"
+        app:cornerRadius="80dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:tabIndicatorColor="#03A9F4"
+        app:tabTextColor="#000000">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="#03A9F4"
+            android:outlineSpotShadowColor="#03A9F4"
+            android:text="All"
+            android:tint="#03A9F4"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="58dp"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00BCD4">
+
+                <!--            <Noti 1-->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="Group 1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1"
+                    android:layout_marginLeft="70dp"
+                    android:text="Recently Tweet from Group 1"
+                    android:textSize="15sp" />
+
+
+                <!--            <Noti 2-->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text2"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Twitter"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text3"
+                    android:layout_marginLeft="70dp"
+                    android:text="Recommended For You"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text4"
+                    android:layout_marginLeft="70dp"
+                    android:text="mans cant get enought ..." />
+
+                <!--            <Noti 3-->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/text5"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text5"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Twitter"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text6"
+                    android:layout_marginLeft="70dp"
+                    android:text="Group1 and Group2 followed Group3"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/text7"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+                <Button
+                    android:id="@+id/follow"
+                    android:layout_width="108dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/text7"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#03A9F4"
+                    android:clickable="true"
+                    android:text="Follow"
+                    android:textSize="10sp"
+                    app:cornerRadius="80dp" />
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/follow"
+                    android:layout_marginLeft="100dp"
+                    android:text="Group3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text8"
+                    android:layout_marginLeft="100dp"
+                    android:text="Group3 from USTH"
+                    android:textSize="15sp" />
+
+                <!--            <Noti 4-->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/text9"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text9"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:text="MrBeast"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text10"
+                    android:layout_marginLeft="70dp"
+                    android:text="Recommended From MrBeast"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="269dp"
+                    android:layout_height="69dp"
+                    android:layout_below="@id/text11"
+                    android:layout_marginLeft="70dp"
+                    android:text="English isn't always our fans' first language so we decided to start dubbing our videos for them. Can't believe how well they're doing ...!" />
+
+                <!--            <Noti 5-->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/text12"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text12"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Twitter"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text13"
+                    android:layout_marginLeft="70dp"
+                    android:text="Recommended For You"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text15"
+                    android:layout_width="269dp"
+                    android:layout_height="69dp"
+                    android:layout_below="@id/text14"
+                    android:layout_marginLeft="70dp"
+                    android:text="she turned off the comments on this video for a reason...imagine calling the cops because a student wouldn't give up their phones. when ppl say teachers are the first cops they encounter, this is what they mean" />
+
+                <!--            <Noti 6-->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/text15"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+                <TextView
+                    android:id="@+id/text16"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text15"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:text="someone..."
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text17"
+                    android:layout_width="288dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@id/text16"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="-26dp"
+                    android:text="From someone... with love <3"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text18"
+                    android:layout_width="269dp"
+                    android:layout_height="69dp"
+                    android:layout_below="@id/text17"
+                    android:layout_marginLeft="70dp"
+                    android:text="I was soooo drunk yesterday, I pulled a young man over to the side who was tynna fight & I had to talk with hime :( I said young man... we are here to have fun. Don't ruin our good time with that foolishness. He said okay & at that moment, I knew I had turned 50 :((((( " />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/mention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentions" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="58dp"
+        android:fillViewport="true"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="348dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_logout"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/viewpro5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_blacklogo" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp">
+
+        <ImageView
+            android:id="@+id/homebu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_home"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/searchbu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/notibu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_bell"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/messbu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_message"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
