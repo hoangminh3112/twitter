@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="54dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_twitter_seeklogo_com" />
+
+    <TextView
+        android:id="@+id/Welcometo"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="118dp"
+        android:text="Welcome to"
+        android:textColor="#50ABF1"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <TextView
+        android:id="@+id/Twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="355dp"
+        android:text="Twitter"
+        android:textColor="#50ABF1"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcometo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/see"
+        android:layout_width="263dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="274dp"
+        android:text="See what's happening in the world right now"
+        android:textColor="#50ABF1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Twitter" />
+
+    <Button
+        android:id="@+id/LogInBu"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="184dp"
+        android:backgroundTint="#50ABF1"
+        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/see"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/SignUpBu"
+        android:layout_width="159dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Sign Up"
+        android:textColor="#50ABF1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogInBu"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
