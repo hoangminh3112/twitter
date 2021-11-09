@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/tweet"
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#2196F3"
+        android:clickable="true"
+        android:text="+"
+        android:textSize="30sp"
+        app:cornerRadius="80dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="621dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="58dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#00BCD4">
+
+            <!--            <Post 1-->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text="Group 1"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_marginLeft="70dp"
+                android:text="Hey @group2 we done this project, how 'bout you guys ^^" />
+
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="249dp"
+                android:layout_height="141dp"
+                android:layout_below="@id/text2"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_java_ar21" />
+
+            <ImageView
+                android:id="@+id/comment1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/pic1"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/no1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic1"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="2dp"
+                android:text="123" />
+
+            <ImageView
+                android:id="@+id/like1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/pic1"
+                android:layout_marginLeft="185dp"
+                android:src="@drawable/ic_like" />
+
+            <TextView
+                android:id="@+id/no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic1"
+                android:layout_marginLeft="215dp"
+                android:layout_marginTop="2dp"
+                android:text="321" />
+
+            <ImageView
+                android:id="@+id/share1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/pic1"
+                android:layout_marginLeft="275dp"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                android:id="@+id/no3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic1"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="2dp"
+                android:text="0" />
+            <!--            <Post 2-->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/comment1"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comment1"
+                android:layout_marginLeft="70dp"
+                android:text="Group 2"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_marginLeft="70dp"
+                android:text="Haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha haha
+surprise @group1 we've not done this yet ...." />
+
+            <ImageView
+                android:id="@+id/comment2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/no4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="2dp"
+                android:text="456" />
+
+            <ImageView
+                android:id="@+id/like2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="185dp"
+                android:src="@drawable/ic_like" />
+
+            <TextView
+                android:id="@+id/no5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="215dp"
+                android:layout_marginTop="2dp"
+                android:text="654" />
+
+            <ImageView
+                android:id="@+id/share2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="275dp"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                android:id="@+id/no6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="2dp"
+                android:text="20" />
+
+            <!--            <Post 3-->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/comment2"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comment2"
+                android:layout_marginLeft="70dp"
+                android:text="someone"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text5"
+                android:layout_marginLeft="70dp"
+                android:text="This looks amazing !!!!!!!" />
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="249dp"
+                android:layout_height="141dp"
+                android:layout_below="@id/text6"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_butterfly" />
+
+            <ImageView
+                android:id="@+id/pic3"
+                android:layout_width="249dp"
+                android:layout_height="141dp"
+                android:layout_below="@id/pic2"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_pic" />
+
+            <ImageView
+                android:id="@+id/comment3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/pic3"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/no7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic3"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="2dp"
+                android:text="789" />
+
+            <ImageView
+                android:id="@+id/like3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/pic3"
+                android:layout_marginLeft="185dp"
+                android:src="@drawable/ic_like" />
+
+            <TextView
+                android:id="@+id/no8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic3"
+                android:layout_marginLeft="215dp"
+                android:layout_marginTop="2dp"
+                android:text="897" />
+
+            <ImageView
+                android:id="@+id/share3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/pic3"
+                android:layout_marginLeft="275dp"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                android:id="@+id/no9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic3"
+                android:layout_marginLeft="310dp"
+                android:layout_marginTop="2dp"
+                android:text="987" />
+
+            <!--            <Post 4-->
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/comment3"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comment3"
+                android:layout_marginLeft="70dp"
+                android:text="another someone"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:layout_marginLeft="70dp"
+                android:text="This looks funny !!!!!!!" />
+
+            <ImageView
+                android:id="@+id/pic4"
+                android:layout_width="249dp"
+                android:layout_height="141dp"
+                android:layout_below="@id/text8"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_butterfly" />
+
+            <ImageView
+                android:id="@+id/pic5"
+                android:layout_width="249dp"
+                android:layout_height="141dp"
+                android:layout_below="@id/pic4"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_pic" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/topnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="348dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_logout"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/viewpro5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_blacklogo" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp">
+
+        <ImageView
+            android:id="@+id/homebu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_home"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/searchbu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/notibu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_bell"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/messbu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_message"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

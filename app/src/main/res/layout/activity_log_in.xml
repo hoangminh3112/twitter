@@ -33,7 +33,7 @@
         android:layout_marginBottom="400dp"
         android:text="Please login to your account"
         android:textColor="#50ABF1"
-        android:textSize="20"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/LogIn" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/TopNav"
         android:layout_width="54dp"
         android:layout_height="63dp"
         android:layout_marginTop="128dp"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintTop_toBottomOf="@+id/TopNav" />
 
     <EditText
         android:id="@+id/EnterEmail"
