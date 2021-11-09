@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="621dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginBottom="58dp"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00BCD4">
+
+                <TextView
+                    android:id="@+id/trends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Trends for you"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trends"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Music * Trending"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView5"
+                    android:layout_marginLeft="25dp"
+                    android:text="#RespectAndApologizeToJennie"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView6"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="Trending in Vietnam" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView7"
+                    android:layout_marginLeft="25dp"
+                    android:text="#SonTungMTP"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView8"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="K-pop * Trending" />
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView9"
+                    android:layout_marginLeft="25dp"
+                    android:text="#JUNKYU"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView10"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="Trending in Vietnam" />
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView11"
+                    android:layout_marginLeft="25dp"
+                    android:text="#solanameme"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView12"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="Trending in Vietnam" />
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView13"
+                    android:layout_marginLeft="25dp"
+                    android:text="#SKYMTP"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView14"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:text="Show more"
+                    android:textColor="#03A9F4"
+                    android:textSize="20sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/happening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView15"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="What's happening"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/happening"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="The Telegraph * Last night" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView16"
+                    android:layout_marginLeft="25dp"
+                    android:text="How to stop microplastics getting into your body"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView17"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="US national news * LIVE"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView18"
+                    android:layout_marginLeft="25dp"
+                    android:text="Murder trial for the killing of Ahmaud Arbery begins in Georgia"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView19"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="Sports * LIVE" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView20"
+                    android:layout_marginLeft="25dp"
+                    android:text="Happy birthday, Alessandro Del Piero!"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView21"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="TCOVID-19 * LIVE" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView22"
+                    android:layout_marginLeft="25dp"
+                    android:text="Updates on Covid-19 in Vietnam"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView23"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:text="Music * LIVE" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView24"
+                    android:layout_marginLeft="25dp"
+                    android:text="Fans celeberate Leo's birthday!!!!"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView25"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:text="Show more"
+                    android:textColor="#03A9F4"
+                    android:textSize="20sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="680dp">
+
+            <ImageView
+                android:id="@+id/homebu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_home"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/searchbu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/ic_search" />
+
+            <ImageView
+                android:id="@+id/notibu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_bell"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/messbu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="340dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_message"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/topnav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/viewpro5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_avatar_human_male_man_people_person_profile_user_users_icon_1320190727966457290_0"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="311dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="2dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="307dp"
+                    android:layout_height="29dp"
+                    android:backgroundTint="#3C2196F3"
+                    android:hint="Search on Twitter"
+                    app:textInputLayoutFocusedRectEnabled="false"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
